@@ -1,8 +1,8 @@
 int a=3;
 int b=5;
+
 int c=10;
 int d=11;
-
 void setup()
 {
   pinMode(a, OUTPUT);
@@ -22,40 +22,13 @@ void dirction2(){
   digitalWrite(c,1);
   digitalWrite(d,0);
 }
-void dirction3(){
-  digitalWrite(a,1);
-  digitalWrite(b,0);
-  digitalWrite(c,1);
-  digitalWrite(d,0);
-}
-void dirction4(){
-  digitalWrite(a,0);
-  digitalWrite(b,1);
-  digitalWrite(c,0);
-  digitalWrite(d,1);
-}
-void stop1(){
-  digitalWrite(a,0);
-  digitalWrite(b,0);
-  digitalWrite(c,0);
-  digitalWrite(d,0);
-}
 
 void loop(){
  dirction1();
   delay(1000);
-  stop1();
    delay(1000);
    dirction2();
   delay(1000);
-  stop1();
-   delay(1000);
-   dirction3();
-  delay(1000);
-  stop1();
-   delay(1000);
-   dirction4();
-  delay(1000);
-  stop1();
-   delay(1000);
+ 
+ 
 }
